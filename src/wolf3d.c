@@ -18,7 +18,7 @@
 #include <fcntl.h>
 #include <sys/time.h> 
 #include <unistd.h>
-#include "../lib/libft.h"
+#include "../libft/libft.h"
 #include "../includes/get_next_line.h"
 #include "../includes/wolf.h"
 

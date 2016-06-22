@@ -12,7 +12,7 @@
 
 #include "../includes/wolf.h"
 #include <mlx.h>
-#include "../lib/libft.h"
+#include "../libft/libft.h"
 
 static void	set_colors(t_rgb *c, int r, int g, int b)
 {

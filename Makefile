@@ -24,7 +24,7 @@ MLX = -L/usr/lib/X11 -lmlx -lXext -lX11
 
 INC = -I /usr/include/X11
 
-LIBFT = -lm -Llib -lft
+LIBFT = -lm -Llibft -lft
 
 OBJ = $(SRC:.c=.o)
 
@@ -37,16 +37,16 @@ all: $(NAME)
 	@$(CC) $(FLAG) -c -o $@ $^ $(INC)
 
 $(NAME): $(OBJ)
-		@cd lib/ && make -s
+		@cd libft/ && make -s
 		@$(CC) $(FLAG) $(OBJ) -o $(NAME) $(INC) $(MLX) $(LIBFT) 
 
 clean:
 		@$(RM) $(OBJ)
-		@cd lib/ && make -s clean
+		@cd libft/ && make -s clean
 
 fclean: clean
 		@$(RM) $(NAME)
-		@cd lib/ && make -s fclean
+		@cd libft/ && make -s fclean
 
 re: fclean all
 
