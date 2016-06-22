@@ -13,7 +13,7 @@
 ##### Assuming that you have the clone of the repository.
 ```C
 $ make      //Make the game and its libraries from the recipe.
-
+```
 ##How to play the game?
 ##### Assuming that you have the game built.
 ```C
