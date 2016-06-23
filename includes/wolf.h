@@ -6,7 +6,7 @@
 /*   By: simzam <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/06/17 14:05:22 by simzam            #+#    #+#             */
-/*   Updated: 2016/06/17 14:07:40 by simzam           ###   ########.fr       */
+/*   Updated: 2016/06/23 17:42:08 by jomeirin         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,7 +15,7 @@
 
 # define WIN_HEIGH 720
 # define WIN_WIDTH 1280
-
+# include "../libft/libft.h"
 typedef struct	s_coord
 {
 	double		x;

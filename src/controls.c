@@ -6,7 +6,7 @@
 /*   By: simzam <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/06/17 13:16:31 by simzam            #+#    #+#             */
-/*   Updated: 2016/06/23 15:39:30 by jomeirin         ###   ########.fr       */
+/*   Updated: 2016/06/23 17:43:20 by jomeirin         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -32,7 +32,10 @@ int			key_press(int keycode, t_env *e)
 int			key_release(int keycode, t_env *e)
 {
 	if (keycode == 65307 || keycode == 0x35)
+	{
+		ft_memdel((void **)e->map.map);
 		exit(0);
+	}
 	if (keycode == 65361 || keycode == 0x7B)
 		e->player.move.left = 0;
 	if (keycode == 65362 || keycode == 0x7E)
